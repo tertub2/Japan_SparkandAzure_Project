@@ -1,0 +1,1 @@
+scp -i myVm_key.pem -r ./src/* azureuser@20.197.230.71:/home/azureuser
