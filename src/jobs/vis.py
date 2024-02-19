@@ -26,7 +26,7 @@ df = df.select('year', 'country', 'number_of_issued_numerical')
 
 # Since some countries are older countries, it is necessary to
 # do a country cleaning
-df correct_country_name(name, threshold=85):
+def correct_country_name(name, threshold=85):
     countries = [country.name for country in pycountry.countries]
 
     corrected_name, score = process.extractOne(name, countries)
