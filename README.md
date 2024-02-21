@@ -34,15 +34,15 @@ The table of contents aims to show the stages of the project along with some det
   
 
 ## 📈 Transformations
-System Architecture: The Spark master-worker architecture is set up in a Docker container on Azure.
-Data Ingestion: The script ingests the CSV file containing the visa numbers in Japan.
-Data Cleaning: The script standardizes column names, drops null columns, and corrects country names using fuzzy matching.
-Data Transformation: The data is further enriched by adding continent information for each country.
-Data Visualization: The cleaned and transformed data is visualized using Plotly Express to provide insights into visa trends in Japan.
-The notebook for this step may be seen [here](https://github.com/tertub2/Japan_SparkandAzure_Project/blob/master/src/jobs/vis.py).
+- System Architecture: The Spark master-worker architecture is set up in a Docker container on Azure.
+- Data Ingestion: The script ingests the CSV file containing the visa numbers in Japan.
+- Data Cleaning: The script standardizes column names, drops null columns, and corrects country names using fuzzy matching.
+- Data Transformation: The data is further enriched by adding continent information for each country.
+- Data Visualization: The cleaned and transformed data is visualized using Plotly Express to provide insights into visa trends in Japan.
+- The notebook for this step may be seen [here](https://github.com/tertub2/Japan_SparkandAzure_Project/blob/master/src/jobs/vis.py).
 
 ## ✅ Results 
-The results are the project focus was achived in the Data Engineering section using all the tools pre-selected and for the results for the anaysys, some can be highlethed as those:
+The project successfully achieved its focus on Data Engineering, leveraging all the pre-selected tools. As for the analysis results, several key findings stand out and deserve highlighting:
 #### - Between 2010 and 2017, a noticeable trend emerged among the top 10 countries with more visa issued in Japan: a predominant presence of Asian nations, with China, the Philippines, and Indonesia securing the top three spots. China leads by a significant margin with 14 million views, followed by 950 million from the Philippines and 840 million from Indonesia. Additionally, it is noteworthy that many of these top-ranking countries are geographically proximate to Japan. This proximity suggests several factors potentially influencing this trend, such as logistical convenience and accessibility, possibly driven by factors like more affordable airfare options.
 #### - For the numbers across continents, it's clear that Asia takes the lead with impressive 18 million issuances, while Europe follows behind with around 512 thousand. South America comes in next with 278 thousand, and Africa isn't far off with about 145 thousand. Bringing up the rear, we've got North America with around 40 thousand and Oceania with roughly 39 thousand.
 #### - In this scenario of the top 10 Countries Japanese Marry Outside of Japan, China, the Philippines, and Brazil emerge as the top three contenders. Brazil's appearance in the top ranks is particularly noteworthy, as it has not been a frequent presence in the previous analyses of the top 10. This unexpected inclusion adds an element of surprise to the findings.
